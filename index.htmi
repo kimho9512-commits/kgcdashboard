@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGC 주간 마케팅 통찰 보고서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans KR"', 'sans-serif'],
+                    },
+                    colors: {
+                        kgcred: '#D31145', // KGC 정관장 유사 레드
+                        kgcgold: '#C5A880',
+                        kgcdark: '#222222',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f3f4f6; }
+        .card { background-color: white; border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); padding: 1.5rem; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto">
+        <!-- Header -->
+        <header class="bg-kgcred text-white p-6 rounded-t-lg shadow-md border-b-4 border-kgcgold flex justify-between items-end">
+            <div>
+                <p class="text-sm font-bold text-kgcgold mb-1">KGC 브랜드 전략실</p>
+                <h1 class="text-3xl font-extrabold tracking-tight">주간 마케팅 통찰 보고서</h1>
+                <p class="text-sm mt-2 opacity-90">대상 제품 : 에브리타임 밸런스 (리뉴얼) | 기준 : 2026년 3월 4주차</p>
+            </div>
+            <div class="text-right text-sm">
+                <p><span class="font-bold">수신:</span> 브랜드 매니저 (BM)</p>
+                <p><span class="font-bold">발신:</span> 마케팅 팀장</p>
+                <p><span class="font-bold">작성일:</span> 2026.04.20</p>
+            </div>
+        </header>
+
+        <!-- Executive Summary -->
+        <div class="bg-white p-6 border-l-4 border-kgcred shadow-md mb-6 rounded-b-lg">
+            <h2 class="text-lg font-bold text-kgcdark mb-2 flex items-center">
+                <svg class="w-5 h-5 mr-2 text-kgcred" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                Executive Summary (핵심 요약)
+            </h2>
+            <p class="text-gray-700 leading-relaxed font-medium">
+                리뉴얼 된 '에브리타임 밸런스'가 <span class="text-kgcred font-bold">2030 사회초년생의 편의점 채널 구매</span>를 중심으로 수도권에서 강세를 보이고 있습니다. 특히 맛의 개선과 세련된 패키징이 호평을 받으며 <span class="bg-yellow-100 px-1">아웃도어(등산, 테니스) TPO와의 연관성이 급증(+30%)</span>하고 있습니다. 다만, 인상된 가격에 대한 심리적 저항과 박스 개봉 불량 이슈가 존재하여, **스포츠 타깃 마케팅 강화 및 즉각적인 품질 개선(QC) 조치**가 필요합니다.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <!-- Sales Data Analysis -->
+            <div class="card border-t-4 border-blue-500">
+                <h3 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">📊 판매 데이터 분석</h3>
+                
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="text-sm text-gray-500 font-bold mb-1">수도권 판매량</p>
+                        <p class="text-2xl font-black text-blue-600">+15% <span class="text-sm font-normal text-gray-600">(WoW)</span></p>
+                        <p class="text-xs text-blue-800 mt-1">▲ 편의점 채널 강세</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <p class="text-sm text-gray-500 font-bold mb-1">지방 판매량</p>
+                        <p class="text-2xl font-black text-red-500">-2% <span class="text-sm font-normal text-gray-600">(WoW)</span></p>
+                        <p class="text-xs text-red-800 mt-1">▼ 대형마트 정체</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-500 font-bold mb-2">주요 구매 연령층</p>
+                    <div class="flex items-end justify-between mb-1">
+                        <span class="font-bold text-kgcdark">2030 사회초년생</span>
+                        <span class="text-lg font-black text-kgcred">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-kgcred h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                    <p class="text-xs text-gray-600 mt-2">인사이트: 2030 타깃의 접근성이 높은 '편의점' 채널이 매출 성장을 견인 중.</p>
+                </div>
+            </div>
+
+            <!-- VOC Analysis -->
+            <div class="card border-t-4 border-green-500">
+                <h3 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">💬 고객 리뷰 요약 <span class="text-sm font-normal text-gray-500">(500건 분석)</span></h3>
+                
+                <div class="space-y-4">
+                    <!-- Positive -->
+                    <div>
+                        <h4 class="text-sm font-bold text-green-600 mb-1 flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                            긍정 리뷰 (Strength)
+                        </h4>
+                        <ul class="text-sm text-gray-700 list-disc pl-5 space-y-1">
+                            <li>"포장이 세련되어 선물용으로 좋다" (패키징 리뉴얼 성공적)</li>
+                            <li>"기존보다 쓴맛이 덜해 먹기 편하다" (맛의 대중화 타깃 적중)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Negative -->
+                    <div>
+                        <h4 class="text-sm font-bold text-red-600 mb-1 flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.714.211-1.412.608-2.006L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5"></path></svg>
+                            부정 리뷰 (Pain Point)
+                        </h4>
+                        <ul class="text-sm text-gray-700 list-disc pl-5 space-y-1">
+                            <li>"가격이 작년보다 오른 느낌이다" (가격 저항감 발생)</li>
+                            <li class="text-red-500 font-medium">"박스 개봉이 가끔 뻑뻑하다" (UX/패키지 품질 결함)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Unique/Trend -->
+                    <div class="bg-purple-50 p-3 rounded-lg border border-purple-100">
+                        <h4 class="text-sm font-bold text-purple-700 mb-1 flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                            특이사항 (Market Trend)
+                        </h4>
+                        <p class="text-sm text-gray-800">
+                            <strong>'등산', '테니스'</strong> 키워드 동반 언급 비중 <span class="text-purple-600 font-bold">30% 급증</span>. 
+                            <br><span class="text-xs text-gray-500">오운완(오늘 운동 완료) 트렌드와 결합하여 '운동 전후 간편한 에너징' 목적으로 소비 확대 중.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategy & Action Items -->
+        <div class="card border-t-4 border-kgcgold mb-6">
+            <h3 class="text-xl font-bold mb-4 text-kgcdark border-b pb-2 flex items-center">
+                <svg class="w-6 h-6 mr-2 text-kgcgold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                BM 대상 전략 제언 및 Action Items
+            </h3>
+            
+            <div class="space-y-4">
+                <!-- Action 1 -->
+                <div class="flex gap-4 p-4 hover:bg-gray-50 rounded-lg transition">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold">1</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg">아웃도어/스포츠 TPO 타깃 마케팅 전개</h4>
+                        <p class="text-sm text-gray-600 mt-1">테니스, 등산 등 아웃도어 키워드 언급이 30% 증가한 것은 매우 유의미한 시그널입니다. 기존 '피로회복' 프레임에서 벗어나 <strong>'스포츠 부스터'</strong>로서의 포지셔닝 확장이 필요합니다.</p>
+                        <ul class="list-disc pl-5 mt-2 text-sm text-gray-700">
+                            <li><strong>실행:</strong> 등산로 초입 및 실내외 테니스장 인근 편의점을 타깃으로 <strong>'에브리타임 스포츠 스페셜 매대'</strong> 및 2+1 프로모션 기획.</li>
+                            <li><strong>온라인:</strong> 인스타그램 내 #오운완 #테린이 해시태그 앰배서더 100인 협찬 캠페인 즉각 실행.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Action 2 -->
+                <div class="flex gap-4 p-4 hover:bg-gray-50 rounded-lg transition border-t border-gray-100">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold">2</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg">패키지 QC 긴급 점검 및 가심비 방어</h4>
+                        <p class="text-sm text-gray-600 mt-1">선물용으로 호평받는 와중에 '박스 개봉의 뻑뻑함'은 프리미엄 브랜드 이미지에 치명적입니다. 또한 가격 인상에 대한 심리적 저항감을 상쇄할 기획이 필요합니다.</p>
+                        <ul class="list-disc pl-5 mt-2 text-sm text-gray-700">
+                            <li><strong>실행 (생산):</strong> SCM 및 생산본부에 <strong>리뉴얼 패키지 지함(박스) 규격 및 절취선 공차 긴급 점검</strong> 공식 요청.</li>
+                            <li><strong>실행 (마케팅):</strong> '덜 쓴 맛'과 '홍삼 유효성분 함량' 등 리뉴얼로 인해 <strong>업그레이드 된 가치(Value)를 강조</strong>하는 상세페이지 리뉴얼 및 매장 POP 배포.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Action 3 -->
+                <div class="flex gap-4 p-4 hover:bg-gray-50 rounded-lg transition border-t border-gray-100">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold">3</div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg">지방 대형마트 하락세 방어용 '체험' 이벤트</h4>
+                        <p class="text-sm text-gray-600 mt-1">지방권(-2%) 대형마트 정체는 2030 타깃보다 가족 단위 4050 타깃의 유입이 줄어든 영향이 큽니다.</p>
+                        <ul class="list-disc pl-5 mt-2 text-sm text-gray-700">
+                            <li><strong>실행:</strong> 다가오는 4월 봄나들이 시즌에 맞춰 주요 지점 대형마트 내 <strong>가족 단위 룰렛 이벤트 및 '덜 쓴 맛' 체험 시음 부스</strong> 주말 집중 운영.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-sm text-gray-500 mt-8 pb-4">
+            <p>본 보고서는 KGC 고객 데이터 베이스 및 채널별 POS 데이터를 기반으로 작성되었습니다.</p>
+            <p>&copy; 2026 KGC Brand Strategy Room.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
